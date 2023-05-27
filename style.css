@@ -36,6 +36,10 @@ h3 {
   line-height: 49px;
 }
 
+footer {
+  margin: 30px 0;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1220px;
@@ -419,10 +423,6 @@ h3 {
   padding-top: 31px;
 }
 
-footer {
-  margin: 30px 0;
-}
-
 .footer-style {
   padding: 30px 0;
   background-color: rgba(238, 238, 238, 36%);
@@ -486,6 +486,12 @@ footer {
     padding: 16px 0;
   }
 
+  h1 {
+    font-size: 42px;
+    line-height: 48px;
+    max-width: 477px;
+  }
+
   .container {
     margin: 0 auto;
     max-width: 688px;
@@ -515,12 +521,6 @@ footer {
 
   .box-1 {
     display: none;
-  }
-
-  h1 {
-    font-size: 42px;
-    line-height: 48px;
-    max-width: 477px;
   }
 
   .easiest-way {
