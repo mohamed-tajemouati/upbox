@@ -4,6 +4,13 @@
   margin: 0;
 }
 
+*{
+  ::before, ::after{
+    content: "";
+    position: absolute;
+  }
+}
+
 body {
   font-family: "DM Serif Text", serif;
 }
@@ -13,10 +20,10 @@ header {
   position: sticky;
   top: 0;
   z-index: 2;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
 }
 
-nav li {
+ li {
   list-style: none;
 }
 
@@ -41,6 +48,7 @@ footer {
 }
 
 .container {
+  padding: 0 20px;
   margin: 0 auto;
   max-width: 1220px;
 }
@@ -68,7 +76,7 @@ footer {
 }
 
 .gap {
-  gap: 40px;
+  gap: 35px;
 }
 
 .sans-font {
@@ -86,7 +94,7 @@ footer {
 .line-style {
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.10em;
 }
 
 .border-radius {
@@ -94,12 +102,12 @@ footer {
 }
 
 .header-button {
-  border: 3px solid rgb(74, 74, 74);
+  border: 3px solid #4a4a4a;
   padding: 9px 23px;
 }
 
 .liste-hover:hover {
-  color: rgb(239, 128, 148);
+  color: #ef8094;
 }
 
 .easiest-way {
@@ -125,13 +133,10 @@ footer {
 }
 
 .easiest-way::before {
-  content: "";
-  position: absolute;
-  background-image: url("./images/box1.png");
+  background-image: url("./images/box-1.png");
   background-repeat: no-repeat;
-  background-size: 100%;
   width: 1003px;
-  height: 712px;
+  height: 750px;
   right: 0px;
   top: 39px;
   z-index: 1;
@@ -154,8 +159,6 @@ footer {
 }
 
 .best-plan::before {
-  position: absolute;
-  content: "";
   background-image: url("./images/underline.png");
   width: 245px;
   height: 16px;
@@ -163,23 +166,25 @@ footer {
 }
 
 .cards {
-  gap: 120px;
+  gap: 80px;
   position: relative;
 }
 
 .card {
-  border: 4px solid rgb(196, 196, 196);
+  border: 4px solid #c4c4c4;
   padding: 45px 180px;
   background-repeat: no-repeat;
-  background-size: 95%;
+border-radius: 10px;
 }
 
 .card-yearly {
   background-image: url("./images/back-card-left.png");
+  background-size: cover;
 }
 
 .card-monthly {
   background-image: url("./images/back-card-rigth.png");
+  background-size: cover;
 }
 
 .price {
@@ -234,9 +239,7 @@ footer {
 }
 
 .mask-1::before {
-  content: "";
-  position: absolute;
-  background-image: url("./images/art1.png");
+  background-image: url("./images/art-1.png");
   width: 289px;
   height: 250px;
   background-repeat: no-repeat;
@@ -246,9 +249,7 @@ footer {
 }
 
 .mask-1::after {
-  content: "";
-  position: absolute;
-  background-image: url("./images/1.png");
+  background-image: url("./images/number-1.png");
   width: 67px;
   height: 143px;
   background-repeat: no-repeat;
@@ -262,12 +263,12 @@ footer {
   align-items: center;
   margin-left: 189px;
   position: relative;
-  background: url(./images/2.png) 18% 61%;
+  background: url(./images/number-2.png) 18% 61%;
   background-repeat: no-repeat;
 }
 
 .box-2 {
-  box-shadow: 36px 36px 28px rgba(74 74 74 / 34%);
+  box-shadow: 36px 36px 28px #4a4a4a57;
   position: relative;
   z-index: -1;
 }
@@ -286,9 +287,7 @@ footer {
 }
 
 .article-2::before {
-  content: "";
-  position: absolute;
-  background: url("./images/Vector2.png") no-repeat;
+  background: url("./images/Vector-2.png") no-repeat;
   width: 321px;
   height: 264px;
   right: 70px;
@@ -297,9 +296,7 @@ footer {
 }
 
 .article-2::after {
-  content: "";
-  position: absolute;
-  background: url("./images/art2.png") no-repeat;
+  background: url("./images/art-2.png") no-repeat;
   width: 171px;
   height: 167px;
   top: 34px;
@@ -325,9 +322,7 @@ footer {
 }
 
 .article-3::before {
-  content: "";
-  position: absolute;
-  background: url("./images/art3.png") no-repeat;
+  background: url("./images/art-3.png") no-repeat;
   width: 197px;
   height: 174px;
   top: 245px;
@@ -336,9 +331,7 @@ footer {
 }
 
 .article-3::after {
-  content: "";
-  position: absolute;
-  background: url("./images/3.png") no-repeat;
+  background: url("./images/number-3.png") no-repeat;
   width: 96px;
   height: 174px;
   left: 14px;
@@ -369,9 +362,7 @@ footer {
 }
 
 .posts::after {
-  content: "";
-  position: absolute;
-  background: url("./images/squig2.png") no-repeat;
+  background: url("./images/squig-2.png") no-repeat;
   width: 198px;
   height: 163px;
   z-index: -1;
@@ -387,9 +378,7 @@ footer {
 }
 
 .posts::before {
-  content: "";
-  position: absolute;
-  background: url("./images/squig1.png") no-repeat;
+  background: url("./images/squig-1.png") no-repeat;
   width: 175px;
   height: 192px;
   top: 46px;
@@ -403,10 +392,14 @@ footer {
   padding-bottom: 50px;
 }
 
+.image-girl{
+  display: none;
+}
+
 .social-post-btn {
   padding: 20px 27px 16px 32px;
-  background-color: rgb(239, 128, 148);
-  color: rgba(255, 255, 255, 1);
+  background-color: #ef8094;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
 }
@@ -425,8 +418,8 @@ footer {
 
 .footer-style {
   padding: 30px 0;
-  background-color: rgba(238, 238, 238, 36%);
-  border: 2px solid rgb(196, 196, 196);
+  background-color: #eeeeee5c;
+  border: 2px solid #c4c4c4;
   border-radius: 6px;
 }
 
@@ -468,14 +461,38 @@ footer {
 
 .sub-footer {
   padding: 40px 50px 17px;
-  border-top: 2px solid rgb(196, 196, 196);
+  border-top: 2px solid #c4c4c4;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.12em;
 }
 
+@media (max-width:1190px){
+ .easiest-way::before{
+  background-size: 90%;
+  top: 100px;
+  left: 150px;
+}
+ .look-good{
+  position: relative;
+  top: -70px;
+}
+
+.cards{
+  gap: 10px;
+}
+.card{
+  padding: 5px 90px;
+}
+
+.image-girl{
+  display: block;
+}
+ }
+
+
 /*tablet*/
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   body {
     margin: 0;
     padding-bottom: 31px;
@@ -494,7 +511,7 @@ footer {
 
   .container {
     margin: 0 auto;
-    max-width: 688px;
+    max-width: 710px;
   }
 
   .header-logo {
@@ -512,7 +529,7 @@ footer {
   .header-button {
     font-size: 10px;
     padding: 9px 18px;
-    border: 2px solid rgb(74, 74, 74);
+    border: 2px solid #4a4a4a;
   }
 
   .logo-text {
@@ -534,9 +551,9 @@ footer {
   }
 
   .easiest-way::before {
-    background-size: 75%;
-    left: 135px;
-    top: 80px;
+    background-size: 70%;
+    left: 20px;
+    top: 135px;
   }
 
   .signed-up {
@@ -544,7 +561,7 @@ footer {
   }
 
   .cards {
-    gap: 60px;
+    gap: 50px;
   }
 
   .duration {
@@ -564,7 +581,7 @@ footer {
   }
 
   .card {
-    padding: 21px 95px;
+    padding: 22px 89px;
   }
 
   .p-size {
@@ -603,7 +620,7 @@ footer {
   }
 
   .article-2 {
-    background: url(./images/2.png) 14% 81%;
+    background: url(./images/number-2.png) 14% 81%;
     background-repeat: no-repeat;
   }
 
@@ -686,16 +703,26 @@ footer {
   }
 }
 
+@media(max-width: 650px){
+  .easiest-way::before{
+    background-size: 70%;
+    top: 137px;
+    left: -40px;
+  }
+  .nav-bar{
+    display: none;
+  }
+  .card{
+    padding: ;
+  }
+}
+
 /*mobile*/
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   h1 {
     max-width: 302px;
     font-size: 48px;
     padding-left: 43px;
-  }
-
-  .nav-bar {
-    display: none;
   }
 
   .header-logo {
@@ -783,7 +810,7 @@ footer {
   .article-2 {
     padding-top: 160px;
     margin-left: 0;
-    background: url(./images/2.png) 14% 0%;
+    background: url(./images/number-2.png) 14% 0%;
     background-repeat: no-repeat;
   }
 
@@ -843,7 +870,9 @@ footer {
   }
 
   .social-post-btn {
-    padding: 20px 7px;
+    padding: 20px 25px;
+    font-size: 14px;
+    letter-spacing: 0.07em;
   }
 
   .footer-top {

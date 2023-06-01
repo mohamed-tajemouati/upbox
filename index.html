@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UPBOX</title>
-  <link <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=
     DM+Serif+Text&display=swap" rel="stylesheet" />
@@ -17,8 +16,12 @@
   <header>
     <div class="container flex-between">
       <div class="flex-center">
-        <img class="cliquable header-logo" src="./images/logo.png" alt="logo" />
+        <a href="#">
+        <img class=" header-logo" src="./images/logo.png" alt="logo" />
+        </a>
+        <a href="#">
         <span class="logo-text sans-font">UPBOX</span>
+      </a>
       </div>
       <div class="flex-between gap nav-bar">
         <nav>
@@ -30,22 +33,22 @@
             <li><a class="liste-hover" href="#">SALE</a></li>
           </ul>
         </nav>
-        <a href="#" class="header-button sans-font line-style border-radius">LOG IN ></a>
+        <a href="#" class="header-button sans-font line-style border-radius">LOG IN &#62</a>
       </div>
     </div>
   </header>
   <main>
     <section class="easiest-way">
       <div class="container">
-        <div class="container flex-between flex-start">
-          <div>
+        <div class="container flex-between flex-start ">
+          <div class="look-good">
             <h1>Look good without leaving your house.</h1>
             <p class="sans-font easiest-p">
               Upbox is the easiest way to look your best without having to
               hunt for the perfect makeup combination. Our stylists curate the
               latest trends and send them directly to your door every month.
             </p>
-            <a href="#" class="sans-font line-style border-radius border-pink signed-up">SIGN UP >
+            <a href="#" class="sans-font line-style border-radius border-pink signed-up">SIGN UP &#62
             </a>
           </div>
           <div class="box-img">
@@ -57,7 +60,7 @@
     <section>
       <div class="flex-direction plans gap container">
         <h2 class="best-plan">Pick your plan</h2>
-        <div class="cards flex-between">
+        <div class="cards flex-between container">
           <article class="card card-monthly flex-direction">
             <h3 class="duration">Monthly</h3>
             <span class="price sans-font">$18/mo</span>
@@ -82,7 +85,7 @@
         <h2 class="works rotate best-plan">How it works?</h2>
         <div class="flex-between article-1">
           <div class="mask-1">
-            <img class="mask1" src="./images/mask1.png" alt="mask1" />
+            <img class="mask1" src="./images/mask-1.png" alt="mask1" />
           </div>
           <div>
             <h3 class="preferences-title how-it">
@@ -109,7 +112,7 @@
       </article>
       <article class="flex-between article-3">
         <div class="mask3">
-          <img class="mask" src="./images/Mask Group.png" alt="mask" />
+          <img class="mask" src="./images/mask.png" alt="mask" />
         </div>
         <div class="mask3-text">
           <h3 class="how-it">Try it on at home</h3>
@@ -121,7 +124,7 @@
         </div>
       </article>
       <div class="try-it">
-        <a href="#" class="sans-font line-style border-radius at-self border-pink">TRY IT FOR YOURSELF ></a>
+        <a href="#" class="sans-font line-style border-radius at-self border-pink">TRY IT FOR YOURSELF &#62</a>
       </div>
     </section>
     <section class="social-posts">
@@ -129,7 +132,7 @@
         <h2 class="posts-title">Social Posts</h2>
         <div class="flex-between posts flex-wrap">
           <div class="post-1">
-            <img src="./images/img1.png" alt="post-1" />
+            <img src="./images/img-1.png" alt="post-1" />
             <p class="post-text sans-font">
               How to rock the lip look that turns heads
             </p>
@@ -146,6 +149,10 @@
               The 5 eye shadow secrets you never knew
             </p>
           </div>
+          <div class="image-girl">
+            <img src="./images/girl.png" alt="girl">
+            <p class="post-text sans-font">The pro-tips for at home hair dying</p>
+          </div>
         </div>
         <div class="follow-btn">
           <a href="#" class="sans-font line-style border-radius social-post-btn">FOLLOW US ON INSTAGRAM</a>
@@ -157,7 +164,7 @@
     <div class="footer-style container">
       <div class="flex-between footer-top flex-wrap">
         <div class="cliquable">
-          <img src="./images/Logo_Footer.png" alt="logo" />
+          <img src="./images/logo-footer.png" alt="logo" />
         </div>
         <div>
           <img class="social-medias cliquable" src="./images/ig.png" alt="intagram-logo" />
@@ -166,8 +173,8 @@
           <img class="social-medias cliquable" src="./images/sc.png" alt="snapchat-logo" />
         </div>
       </div>
-      <div class="flex-between footer-ul grid">
-        <nav>
+      <nav class="flex-between footer-ul grid">
+        <div>
           <h4 class="li-title sans-font">UPBOX</h4>
           <ul class="footer-li sans-font">
             <li><a class="liste-hover" href="#">Upbox Bag</a></li>
@@ -177,8 +184,8 @@
             <li><a class="liste-hover" href="#">Seasonal Items</a></li>
             <li><a class="liste-hover" href="#">Upbox Promise</a></li>
           </ul>
-        </nav>
-        <nav>
+        </div>
+        <div>
           <h4 class="li-title sans-font">Find Us On</h4>
           <ul class="footer-li sans-font">
             <li><a class="liste-hover" href="#">Instagram</a></li>
@@ -187,8 +194,8 @@
             <li><a class="liste-hover" href="#">SnapChat</a></li>
             <li><a class="liste-hover" href="#">Twitter</a></li>
           </ul>
-        </nav>
-        <nav>
+        </div>
+        <div>
           <h4 class="li-title sans-font">Product</h4>
           <ul class="footer-li sans-font">
             <li><a class="liste-hover" href="#">Get the App</a></li>
@@ -196,8 +203,8 @@
             <li><a class="liste-hover" href="#">Affiliates</a></li>
             <li><a class="liste-hover" href="#">Press</a></li>
           </ul>
-        </nav>
-        <nav class="help">
+        </div>
+        <div class="help">
           <h4 class="li-title sans-font">Help</h4>
           <ul class="footer-li sans-font">
             <li><a class="liste-hover" href="#">Returns</a></li>
@@ -206,18 +213,18 @@
             <li><a class="liste-hover" href="#">Community</a></li>
             <li><a class="liste-hover" href="#">Videos</a></li>
           </ul>
-        </nav>
-      </div>
-      <nav class="sub-footer sans-font">
-        <ul class="flex-between flex-wrap">
-          <li class="quest">
+          </div>
+      </nav>
+      <div class="sub-footer sans-font flex-between flex-wrap">
+          <p class="quest">
             © 2020 Quest AI. Upbox is a Sample Project and open source design
             project free for personal and commercial use.
-          </li>
+          </p>
+        <ul>
           <li><a href="#">Terms</a></li>
           <li><a href="#">Privacy Policy</a></li>
         </ul>
-      </nav>
+      </div>
     </div>
   </footer>
 </body>
